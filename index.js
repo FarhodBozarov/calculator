@@ -104,4 +104,6 @@ window.addEventListener("keyup", (e) => {
 const render = () => {
     number.value = display_text
 }
+
+let gool = 3
 // adding comment
