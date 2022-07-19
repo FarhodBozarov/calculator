@@ -1,0 +1,96 @@
+@import url('http://fonts.cdnfonts.com/css/scientific-calculator-lcd');
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    user-select: none;
+    font-family: 'Scientific Calculator LCD', sans-serif;
+    background-color: rgb(59, 70, 100);
+    overflow: hidden;
+}
+
+.container .input {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+    font-size: 36px;
+    color: rgb(254, 255, 255);
+    background-color: rgb(24, 31, 50);
+}
+
+.number {
+    font-family: 'Scientific Calculator LCD', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: right;
+    outline: none;
+    font-size: 28px;
+    margin-right: 8px;
+    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container .main-head {
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(37, 45, 68);
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-columns: repeat(4);
+    grid-gap: 15px;
+}
+
+.container .main-head span {
+    font-weight: bold;
+    min-width: 80px;
+    border-radius: 10px;
+    background-color: rgb(254, 255, 255);
+    border-bottom: 2px solid rgb(184, 164, 153);
+    display: grid;
+    place-items: center;
+}
+
+.activ.on {
+    border-bottom: none;
+    transform: translateY(1px);
+}
+
+.container .main-head span:active {
+    border-bottom: none;
+    transform: translateY(1px);
+}
+
+.container .main-head .mod {
+    grid-row: 1;
+    grid-column: 1/3;
+    background-color: rgb(162, 168, 224);
+    color: white;
+}
+
+.container .main-head span:nth-child(20) {
+    grid-row: 6;
+    grid-column: 1/3;
+}
+
+.container .main-head span:last-child {
+    grid-row: 6;
+    grid-column: 3/5;
+}
+
+.container .main-head .pushti {
+    border-bottom: 2px solid rgb(65, 72, 108);
+    background-color: rgb(162, 168, 224);
+    color: white;
+}
+
+.container .main-head .equal {
+    border-bottom: 2px solid rgb(194, 5, 24);
+    background-color: rgb(242, 50, 104);
+    color: white;
+}
